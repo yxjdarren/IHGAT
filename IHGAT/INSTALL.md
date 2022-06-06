@@ -7,7 +7,6 @@
 2. Install dependencies
 
 **Name                    Version                   Build  Channel**
-# Name                    Version                   Build  Channel
 </p>_libgcc_mutex             0.1                        main    defaults  </p>   <p>
 _openmp_mutex             4.5                       1_gnu    defaults  </p>   <p>
 blas                      1.0                    openblas    defaults  </p>   <p>
