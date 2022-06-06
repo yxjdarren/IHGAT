@@ -65,7 +65,7 @@ You can change the k value by changing the value of the n_neighbors variable in 
 ## Acknowledgment
 We thank the following work providing helpful components/functions in our work.
 
-- [CPM_Nets](https://github.com/hanmenghan/CPM_Nets/blob/master/util/util.py)
+- [CPM_Nets](https://github.com/hanmenghan/CPM_Nets)
 
 
 
