@@ -4,14 +4,11 @@
 The code repository for "Integrated Heterogeneous Graph Attention Network for Incomplete Multi-View Clustering
 " (the paper has been submitted to IEEE TIP) in PyTorch.
 
-## Integrated Heterogeneous Graph Attention Network for Incomplete Multi-View Clustering 
-
-<img src='imgs/teaser.png' width='900' height='494'>
-
 ## Results
-<img src='imgs/result.png' width='900' height='563'>
+<img src='imgs/Table_High_Missing_Rate.png' width='900' height='563'>
+<img src='imgs/Dimension_Analysis.png' width='900' height='563'>
 
-Please refer to our [paper](https://arxiv.org/abs/2203.06953) for detailed values.
+Please refer to our [paper](Links will be provided when the paper is published) for detailed values.
 
 ## Prerequisites
 
