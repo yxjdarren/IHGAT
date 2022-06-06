@@ -21,46 +21,53 @@ We provide the source code on six benchmark datasets, i.e., CUB, Football, ORL, 
 
 ## Code Structures
 There are four parts in the code.
- - `models`: It contains the backbone network and training protocols for the experiment.
- - `data`: Images and splits for the data sets.
-- `dataloader`: Dataloader of different datasets.
- - `checkpoint`: The weights and logs of the experiment.
+ - `models`: It contains the backbone network for the experiment.
+ - `data`: .mat format data for the datasets.
  
 ## Training scripts
 
-- Train CIFAR100
+- Train CUB
 
   ```
-  python train.py -projec fact -dataset cifar100  -base_mode "ft_cos" -new_mode "avg_cos" -gamma 0.1 -lr_base 0.1 -lr_new 0.1 -decay 0.0005 -epochs_base 600 -schedule Cosine -gpu 0,1,2,3 -temperature 16 -batch_size_base 256   -balance 0.001 -loss_iter 0 -alpha 0.5 >>CIFAR-FACT.txt
+  python main.py --data cub --gpu 0 --latent_dim 64 --epochs 500 --repeat 100 --lr 0.02 --weight_decay 0.0005 --missing_rate 0.9 --dropout 0.6 --nheads 3 --log_path log_cub_dim64_lr2e-2_wd5e-4_mr9_dr6e-1_nh3_k3.txt
   ```
   
-- Train CUB200
+- Train Football
     ```
-    python train.py -project fact -dataset cub200 -base_mode 'ft_cos' -new_mode 'avg_cos' -gamma 0.25 -lr_base 0.005 -lr_new 0.1 -decay 0.0005 -epochs_base 400 -schedule Milestone -milestones 50 100 150 200 250 300 -gpu '3,2,1,0' -temperature 16 -dataroot YOURDATAROOT -batch_size_base 256 -balance 0.01 -loss_iter 0  >>CUB-FACT.txt 
-    ```
-
-- Train miniImageNet
-    ```
-    python train.py -project fact -dataset mini_imagenet -base_mode 'ft_cos' -new_mode 'avg_cos' -gamma 0.1 -lr_base 0.1 -lr_new 0.1 -decay 0.0005 -epochs_base 1000 -schedule Cosine  -gpu 1,2,3,0 -temperature 16 -dataroot YOURDATAROOT -alpha 0.5 -balance 0.01 -loss_iter 150 -eta 0.1 >>MINI-FACT.txt  
+    python main.py --data football --gpu 0 --latent_dim 64 --epochs 500 --repeat 100 --lr 0.01 --weight_decay 0.0005 --missing_rate 0.9 --dropout 0.3 --nheads 3 --log_path log_football_dim64_lr1e-2_wd5e-4_mr9_dr3e-1_nh3_k10.txt 
     ```
 
-Remember to change `YOURDATAROOT` into your own data root, or you will encounter errors.
+- Train ORL
+    ```
+    python main.py --data orl --gpu 0 --latent_dim 64 --epochs 500 --repeat 100 --lr 0.02 --weight_decay 0.0005 --missing_rate 0.9 --dropout 0.6 --nheads 3 --log_path log_orl_dim64_lr2e-2_wd5e-4_mr9_dr6e-1_nh3_k5.txt  
+    ```
+
+- Train PIE
+    ```
+    python main.py --data pie --gpu 0 --latent_dim 128 --epochs 500 --repeat 100 --lr 0.01 --weight_decay 0.0005 --missing_rate 0.9 --dropout 0.6 --nheads 3 --log_path log_pie_dim128_lr1e-2_wd5e-4_mr9_dr6e-1_nh3_k5.txt  
+    ```
+
+- Train Politics
+    ```
+    python main.py --data politics --gpu 0 --latent_dim 16 --epochs 500 --repeat 100 --lr 0.02 --weight_decay 0.0005 --missing_rate 0.9 --dropout 0.6 --nheads 3 --log_path log_politics_dim16_lr2e-2_wd5e-4_mr9_dr6e-1_nh3_k10.txt  
+    ```
+
+- Train 3Sources
+    ```
+    python main.py --data 3source --gpu 0 --latent_dim 64 --epochs 500 --repeat 100 --lr 0.02 --weight_decay 0.0005 --missing_rate 0.9 --dropout 0.6 --nheads 3 --log_path log_3source_dim64_lr2e-2_wd5e-4_mr9_dr6e-1_nh3_k5.txt  
+    ```
+
+You can change the k value by changing the value of the n_neighbors variable in models/net.py.
 
   
 
  
 ## Acknowledgment
-We thank the following repos providing helpful components/functions in our work.
+We thank the following work providing helpful components/functions in our work.
 
-- [Awesome Few-Shot Class-Incremental Learning](https://github.com/zhoudw-zdw/Awesome-Few-Shot-Class-Incremental-Learning)
-
-- [PyCIL: A Python Toolbox for Class-Incremental Learning](https://github.com/G-U-N/PyCIL)
-
-- [Proser](https://github.com/zhoudw-zdw/CVPR21-Proser)
-
-- [CEC](https://github.com/icoz69/CEC-CVPR2021)
+- [CPM_Nets](https://github.com/hanmenghan/CPM_Nets/blob/master/util/util.py)
 
 
 
 ## Contact 
-If there are any questions, please feel free to contact with the author:  Da-Wei Zhou (zhoudw@lamda.nju.edu.cn). Enjoy the code.
+If there are any questions, please feel free to contact with the author:  Xinjie Yao (yaoxinjie@tju.edu.cn). Enjoy the code.
