@@ -20,7 +20,7 @@ Please see [INSTALL.md](./INSTALL.md)
 We provide the source code on six benchmark datasets, i.e., CUB, Football, ORL, PIE, Politics and 3Sources. 
 
 ## Code Structures
-There are four parts in the code.
+There are two parts in the code.
  - `models`: It contains the backbone network for the experiment.
  - `data`: .mat format data for the datasets.
  
