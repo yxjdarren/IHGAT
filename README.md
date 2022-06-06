@@ -14,14 +14,10 @@ Please refer to our [paper](Links will be provided when the paper is published) 
 
 The following packages are required to run the scripts:
 
-- [PyTorch-1.4 and torchvision](https://pytorch.org)
-
-- tqdm
+Please see [INSTALL.md](./INSTALL.md)
 
 ## Dataset
-We provide the source code on three benchmark datasets, i.e., CIFAR100, CUB200 and miniImageNet. Please follow the guidelines in [CEC](https://github.com/icoz69/CEC-CVPR2021) to prepare them.
-
-
+We provide the source code on six benchmark datasets, i.e., CUB, Football, ORL, PIE, Politics and 3Sources. 
 
 ## Code Structures
 There are four parts in the code.
