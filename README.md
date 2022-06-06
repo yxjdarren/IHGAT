@@ -5,8 +5,8 @@ The code repository for "Integrated Heterogeneous Graph Attention Network for In
 " (the paper has been submitted to IEEE TIP) in PyTorch.
 
 ## Results
-<img src='imgs/Table_High_Missing_Rate.png' width='900' height='563'>
-<img src='imgs/Dimension_Analysis.png' width='900' height='563'>
+<img src='imgs/Table_High_Missing_Rate.png' width='300' height='130'>
+<img src='imgs/Dimension_Analysis.png' width='300' height='240'>
 
 Please refer to our [paper](Links will be provided when the paper is published) for detailed values.
 
