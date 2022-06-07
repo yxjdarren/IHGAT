@@ -25,23 +25,26 @@ Please see [INSTALL.md](./INSTALL.md)
 ## Dataset
 We provide the six benchmark datasets, i.e., [CUB](https://www.vision.caltech.edu/datasets/cub_200_2011/), [Football](http://mlg.ucd.ie/aggregation/index.html), [ORL](https://www.cl.cam.ac.uk/research/dtg/attarchive/facedatabase.html), [PIE](http://www.cs.cmu.edu/afs/cs/project/PIE/MultiPie/Multi-Pie/Home.html), [Politics](http://mlg.ucd.ie/aggregation/index.html) and [3Sources](http://mlg.ucd.ie/datasets/3sources.html). 
 
+Each dataset can be referred to the following link. If the link cannot be accessed, it can be directly obtained in the data folder provided by us.
+
+CUB: https://www.vision.caltech.edu/datasets/cub_200_2011/
+
+Football: http://mlg.ucd.ie/aggregation/index.html
+
+ORL: https://www.cl.cam.ac.uk/research/dtg/attarchive/facedatabase.html
+
+PIE: http://www.cs.cmu.edu/afs/cs/project/PIE/MultiPie/Multi-Pie/Home.html
+
+Politics: http://mlg.ucd.ie/aggregation/index.html
+
+3Sources: http://mlg.ucd.ie/datasets/3sources.html
+
 ## Code Structures
 There are two parts in the code.
  - `models`: It contains the backbone network for the experiment.
  - `data`: .mat format data for the datasets.
  
 ## Training scripts
-
-- Train CUB
-
-  ```
-  python main.py --data cub --gpu 0 --latent_dim 64 --epochs 500 --repeat 100 --lr 0.02 --weight_decay 0.0005 --missing_rate 0.9 --dropout 0.6 --nheads 3 --log_path log_cub_dim64_lr2e-2_wd5e-4_mr9_dr6e-1_nh3_k3.txt
-  ```
-  
-- Train Football
-    ```
-    python main.py --data football --gpu 0 --latent_dim 64 --epochs 500 --repeat 100 --lr 0.01 --weight_decay 0.0005 --missing_rate 0.9 --dropout 0.3 --nheads 3 --log_path log_football_dim64_lr1e-2_wd5e-4_mr9_dr3e-1_nh3_k10.txt 
-    ```
 
 - Train ORL
     ```
@@ -51,16 +54,6 @@ There are two parts in the code.
 - Train PIE
     ```
     python main.py --data pie --gpu 0 --latent_dim 128 --epochs 500 --repeat 100 --lr 0.01 --weight_decay 0.0005 --missing_rate 0.9 --dropout 0.6 --nheads 3 --log_path log_pie_dim128_lr1e-2_wd5e-4_mr9_dr6e-1_nh3_k5.txt  
-    ```
-
-- Train Politics
-    ```
-    python main.py --data politics --gpu 0 --latent_dim 16 --epochs 500 --repeat 100 --lr 0.02 --weight_decay 0.0005 --missing_rate 0.9 --dropout 0.6 --nheads 3 --log_path log_politics_dim16_lr2e-2_wd5e-4_mr9_dr6e-1_nh3_k10.txt  
-    ```
-
-- Train 3Sources
-    ```
-    python main.py --data 3source --gpu 0 --latent_dim 64 --epochs 500 --repeat 100 --lr 0.02 --weight_decay 0.0005 --missing_rate 0.9 --dropout 0.6 --nheads 3 --log_path log_3source_dim64_lr2e-2_wd5e-4_mr9_dr6e-1_nh3_k5.txt  
     ```
 
 You can change the k value by changing the value of the n_neighbors variable in models/net.py.
