@@ -4,9 +4,15 @@
 The code repository for "Integrated Heterogeneous Graph Attention Network for Incomplete Multi-View Clustering
 " (the paper has been submitted to IEEE TIP) in PyTorch.
 
+## Integrated Heterogeneous Graph Attention Network for Incomplete Multi-View Clustering
+
+
+The architecture of IHGAT requires only a small amount of paired data to model missing views, focusing more on internal structural information rather than using view-completion methods that may introduce noise. Firstly, we construct a set of integrated heterogeneous graphs based on the similarity graph learned from unified latent representations and the view-specific availability graphs obtained by existence relations of different samples. Next, we apply an attention mechanism to aggregate the embedded content of heterogeneous neighbors for each node. Finally, the consistency of probability distribution is embedded into the network for clustering.
+
+<img src='imgs/Framework.png' width='1000' height='500'>
+
 ## Results
-<img src='imgs/Table_High_Missing_Rate.png' width='300' height='130'>
-<img src='imgs/Dimension_Analysis.png' width='300' height='240'>
+<img src='imgs/Table_Result.png' width='1000' height='200'>
 
 Please refer to our [paper](Links will be provided when the paper is published) for detailed values.
 
@@ -17,7 +23,7 @@ The following packages are required to run the scripts:
 Please see [INSTALL.md](./INSTALL.md)
 
 ## Dataset
-We provide the source code on six benchmark datasets, i.e., CUB, Football, ORL, PIE, Politics and 3Sources. 
+We provide the six benchmark datasets, i.e., [CUB](https://www.vision.caltech.edu/datasets/cub_200_2011/), [Football](http://mlg.ucd.ie/aggregation/index.html), [ORL](https://www.cl.cam.ac.uk/research/dtg/attarchive/facedatabase.html), [PIE](http://www.cs.cmu.edu/afs/cs/project/PIE/MultiPie/Multi-Pie/Home.html), [Politics](http://mlg.ucd.ie/aggregation/index.html) and [3Sources](http://mlg.ucd.ie/datasets/3sources.html). 
 
 ## Code Structures
 There are two parts in the code.
