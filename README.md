@@ -25,7 +25,7 @@ Please see [INSTALL.md](./INSTALL.md)
 ## Dataset
 We provide the six benchmark datasets, i.e., [CUB](https://www.vision.caltech.edu/datasets/cub_200_2011/), [Football](http://mlg.ucd.ie/aggregation/index.html), [ORL](https://www.cl.cam.ac.uk/research/dtg/attarchive/facedatabase.html), [PIE](http://www.cs.cmu.edu/afs/cs/project/PIE/MultiPie/Multi-Pie/Home.html), [Politics](http://mlg.ucd.ie/aggregation/index.html) and [3Sources](http://mlg.ucd.ie/datasets/3sources.html). 
 
-Each dataset can be referred to the following link. If the link cannot be accessed, it can be directly obtained in the IHGAT/data provided by us.
+Each dataset can be referred to the following link. If the link cannot be accessed, it can be directly obtained in the IHGAT/IHGAT/data/ provided by us.
 
 CUB: https://www.vision.caltech.edu/datasets/cub_200_2011/
 
