@@ -1,13 +1,12 @@
+# Integrated Heterogeneous Graph Attention Network for Incomplete Multi-Modal Clustering  (IHGAT)
 
-# Integrated Heterogeneous Graph Attention Network for Incomplete Multi-View Clustering  (IHGAT)
-
-The code repository for "Integrated Heterogeneous Graph Attention Network for Incomplete Multi-View Clustering
+The code repository for "Integrated Heterogeneous Graph Attention Network for Incomplete Multi-Modal Clustering
 " (the paper has been submitted to IJCV) in PyTorch.
 
-## Integrated Heterogeneous Graph Attention Network for Incomplete Multi-View Clustering
+## Integrated Heterogeneous Graph Attention Network for Incomplete Multi-Modal Clustering
 
 
-The architecture of IHGAT requires only a small amount of paired data to model missing views, focusing more on internal structural information rather than using view-completion methods that may introduce noise. Firstly, we construct a set of integrated heterogeneous graphs based on the similarity graph learned from unified latent representations and the view-specific availability graphs obtained by existence relations of different samples. Next, we apply an attention mechanism to aggregate the embedded content of heterogeneous neighbors for each node. Finally, the consistency of probability distribution is embedded into the network for clustering.
+The architecture of IHGAT requires only a small amount of paired data to model missing modalities, focusing more on internal structural information rather than using modal-completion methods that may introduce noise. Firstly, we construct a set of integrated heterogeneous graphs based on the similarity graph learned from unified latent representations and the modal-specific availability graphs obtained by existence relations of different samples. Next, we apply an attention mechanism to aggregate the embedded content of heterogeneous neighbors for each node. Finally, the consistency of probability distribution is embedded into the network for clustering.
 
 <img src='imgs/Framework.png' width='1000' height='480'>
 
