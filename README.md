@@ -2,7 +2,7 @@
 # Integrated Heterogeneous Graph Attention Network for Incomplete Multi-View Clustering  (IHGAT)
 
 The code repository for "Integrated Heterogeneous Graph Attention Network for Incomplete Multi-View Clustering
-" (the paper has been submitted to IEEE TIP) in PyTorch.
+" (the paper has been submitted to IJCV) in PyTorch.
 
 ## Integrated Heterogeneous Graph Attention Network for Incomplete Multi-View Clustering
 
